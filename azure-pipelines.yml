@@ -36,3 +36,10 @@ steps:
     testRunTitle: 'NET472 Tests'
     arguments: '--framework $(targetFramework)'
     vsTestVersion: '17.0'
+    
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
