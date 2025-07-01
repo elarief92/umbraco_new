@@ -41,5 +41,5 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: 'drop'
+    ArtifactName: 'SEU'
     publishLocation: 'Container'
